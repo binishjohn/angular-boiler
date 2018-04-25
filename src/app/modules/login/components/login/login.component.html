@@ -1,41 +1,53 @@
-<form #newUserForm="ngForm" (ngSubmit)="onSubmit(newUserForm)">
-  
-    <input type="text" placeholder="User name"
-           required maxlength="25"
-           [(ngModel)]="userName" name="userName"
-           #pickedName="ngModel">
-    <div *ngIf="!pickedName.valid && pickedName.touched">
-      User name is required!
-    </div>
-  
-    <input type="email" placeholder="Email"
-           required [(ngModel)]="email"
-           name="email" #userEmail="ngModel">
-    <div *ngIf="!userEmail.valid && userEmail.touched">
-      Email is required!
-    </div>
-  
-    <input type="text" placeholder="Nick name"
-           [(ngModel)]="nickName" name="nickName">
-  
-    <input type="password" placeholder="Password" required
-           [(ngModel)]="password" name="password"
-           #userPassword="ngModel">
-    <div *ngIf="!userPassword.valid && userPassword.touched">
-      Password is required!
-    </div>
-  
-  
-    <button type="submit" [disabled]="!newUserForm.form.valid">
-      Register
-    </button>
-  
-    <button type="button" (click)="newUserForm.reset()">
-      Reset
-    </button>
-  
-  </form>
+<app-navigation></app-navigation>
+<div class="container py-5">
 
-  <pre>{{ newUserForm.form.value | json }}</pre> <!-- Value of whole form -->
-  <pre>User name: {{ pickedName.value }}</pre> <!-- Value of userName field -->
-  <pre>Valid form? {{ newUserForm.form.valid | json }}</pre> <!-- Validity of whole form -->
+
+
+
+  <div class="row">
+      <div class="col-md-12">
+          <h2 class="text-center text-white mb-4">Bootstrap 4 Login Form</h2>
+          <div class="row">
+              <div class="col-md-6 mx-auto">
+                  <!-- form card login -->
+                  <div class="card rounded-0">
+                      <div class="card-header">
+                          <h4 class="mb-0">Login</h4>
+                      </div>
+                      <div class="card-body">
+                          <form class="form" role="form" autocomplete="off" id="formLogin" novalidate="" method="POST">
+                              <div class="form-group">
+                                  <label for="uname1">Username</label>
+                                  <input type="text" class="form-control form-control-lg rounded-0" name="uname1" id="uname1" required="">
+                                  <div class="invalid-feedback">Oops, you missed this one.</div>
+                              </div>
+                              <div class="form-group">
+                                  <label>Password</label>
+                                  <input type="password" class="form-control form-control-lg rounded-0" id="pwd1" required="" autocomplete="new-password">
+                                  <div class="invalid-feedback">Enter your password too!</div>
+                              </div>
+                              
+                              <div class="col-md-6">
+                              <button type="submit" class="btn btn-success btn-sm float-right btn-block" id="btnLogin">Login</button>
+                              </div>
+
+                          </form>
+                      </div>
+                      <!--/card-block-->
+                  </div>
+                  <!-- /form card login -->
+
+              </div>
+
+
+          </div>
+          <!--/row-->
+
+      </div>
+      <!--/col-->
+  </div>
+  <!--/row-->
+</div>
+<!--/container-->
+
+

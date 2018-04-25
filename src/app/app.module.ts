@@ -14,8 +14,9 @@ import { UserDataService } from "./services/user.service";
 import { AuthenticationService } from "./services/authentication.service";
 // guards
 import { CanActivateRouteGuard } from "./guards/can-activate-route.guard";
+import { NavigationComponent } from './modules/general/navigation/navigation.component';
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, NavigationComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [
     {
