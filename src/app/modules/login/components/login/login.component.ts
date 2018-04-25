@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   onSubmit(form: NgForm) {
     if (form.valid) {
       console.log(form.value);
-      // ...our form is valid, we can submit the data
+      // ...our form is valid, we can submit the datas
     }
   }
 
