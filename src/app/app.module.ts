@@ -14,9 +14,14 @@ import { UserDataService } from "./services/user.service";
 import { AuthenticationService } from "./services/authentication.service";
 // guards
 import { CanActivateRouteGuard } from "./guards/can-activate-route.guard";
-import { NavigationComponent } from './modules/general/navigation/navigation.component';
+import { NavigationComponent } from "./modules/navigation/navigation.component";
+import { DashboardRfpComponent } from './modules/dashboard-rfp/dashboard-rfp.component';
+import { AppShellComponent } from './modules/app-shell/app-shell.component';
+import { RfpComponent } from './modules/rfp/rfp.component';
+import { ClientRfpsComponent } from './modules/client-rfps/client-rfps.component';
+import { RfpDetailsComponent } from './modules/rfp-details/rfp-details.component';
 @NgModule({
-  declarations: [AppComponent, LoginComponent, NavigationComponent],
+  declarations: [AppComponent, LoginComponent, NavigationComponent, DashboardRfpComponent, AppShellComponent, RfpComponent, ClientRfpsComponent, RfpDetailsComponent],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [
     {

@@ -1,0 +1,267 @@
+<div class="container py-3">
+  <div class="d-flex">
+    <div class="col-lg-4 p-xl-1">
+      <div>
+        <div class="card hub-card mt-2">
+          <div class=" hub-card-block">
+            <div class="hub-card-title p-1">
+              <span class="card-title p-2 m-0 ">
+                <i class="fa fa-user-circle-o "></i>
+                <a [routerLink]="[ '/rfp/client', rfp.name] " class="m-lg-2 ">Client Summary</a>
+              </span>
+            </div>
+            <div class="hub-card-body p-2 bg-light">
+              <div class="">
+                <span class="h7">Akme Inc.</span>
+              </div>
+            </div>
+            <div class="hub-card-body p-2">
+              <div class="d-flex flex-lg-column">
+                <div class="col-lg-12 p-0">
+                  <div class="col-lg-12 p-0">
+                    <i class="fa fa-user-circle"></i>
+                    <span class="pl-4">Diego Costa</span>
+                  </div>
+                  <div class="col-lg-12 p-0">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="pl-4">Diego.Costa@atmandrid.com</span>
+                  </div>
+                  <div class="col-lg-12 p-0">
+                    <i class="fa fa-phone"></i>
+                    <span class="pl-4">1231-123-123</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hub-card mt-2">
+          <div class=" hub-card-block">
+            <div class="hub-card-title p-1">
+              <span class="card-title p-2 m-0 ">
+                <i class="fa fa-circle-o"></i>
+                <a [routerLink]="[ '/rfp/client', rfp.name] " class="m-lg-2 ">Hub Team</a>
+              </span>
+            </div>
+            <div class="hub-card-body p-2 m-0">
+              <div class="d-flex flex-lg-column">
+                <div class="col-lg-12 p-0">
+                  <div class="col-lg-12 d-flex justify-content-between p-0">
+                    <label>Producer</label>
+                    <span class="pl-4">Diego Costa</span>
+                  </div>
+                  <div class="col-lg-12 d-flex justify-content-between p-0">
+                    <label>RFP Owner</label>
+                    <span class="pl-4">Diego.Costa@atmandrid.com</span>
+                  </div>
+                  <div class="col-lg-12 d-flex justify-content-between p-0">
+                    <label>RFP Backup</label>
+                    <span class="pl-4">1231-123-123</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-lg-8  p-xl-1">
+      <div class="col-lg-12 p-0">
+        <div class="card hub-card mt-2">
+          <div class=" hub-card-block">
+            <div class="hub-card-title p-1">
+              <span class="card-title p-2 m-0 ">
+                <i class="fa fa-clock-o "></i>
+                <a [routerLink]="[ '/rfp/client', rfp.name] " class="m-lg-2 ">Date</a>
+              </span>
+            </div>
+            <div class="hub-card-body p-xl-0 m-0">
+              <div class="col-lg-12 d-flex p-0">
+                <div class="col-lg-4 p-x-1">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Submitted</label>
+                    <input type="date" class="form-control form-control-sm hub-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-x-1">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Due</label>
+                    <input type="date" class="form-control form-control-sm hub-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-x-1">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Completed</label>
+                    <input type="date" class="form-control form-control-sm hub-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-12 p-0 d-flex">
+    <div class="col-lg-6 p-xl-1">
+      <div class="card hub-card">
+        <div class=" hub-card-block">
+          <div class="hub-card-title p-1">
+            <span class="card-title p-2 m-0 ">
+              <i class="fa fa-bar-chart"></i>
+              <a [routerLink]="[ '/rfp/client', rfp.name] " class="m-lg-2 ">Census Data</a>
+            </span>
+          </div>
+          <div class="hub-card-body p-0 m-0">
+            <table class="table table-sm hub-table table-striped table-hover m-0">
+              <thead>
+                <tr>
+                  <th scope="col">Available Census</th>
+                  <th class="text-center">Date</th>
+                  <th class="text-center">Use in RFP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2017 Census</td>
+                  <td class="text-center">12/12/2017</td>
+                  <td class="text-center">
+                    <a href="">Test</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>New</td>
+                  <td class="text-center">12/12/2017</td>
+                  <td class="text-center">
+                    <a href="">Test</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pending</td>
+                  <td class="text-center">12/12/2017</td>
+                  <td class="text-center">
+                    <a href="">Test</a>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 p-xl-1">
+      <div class="card hub-card ">
+        <div class=" hub-card-block">
+          <div class="hub-card-title p-1">
+            <span class="card-title p-2 m-0 ">
+              <i class="fa fa-lightbulb-o"></i>
+              <a [routerLink]="[ '/rfp/client', rfp.name] " class="m-lg-2 ">Coverage</a>
+            </span>
+          </div>
+          <div class="hub-card-body p-0 m-0">
+            <table class="table  table-sm hub-table table-striped table-hover m-0">
+              <thead>
+                <tr>
+                  <th scope="col">Included</th>
+                  <th class="text-center">Line of coverage</th>
+                  <th class="text-center">Req Out</th>
+                  <th class="text-center">Res In</th>
+                  <th class="text-center">Req New </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2017 Census</td>
+                  <td class="text-center">12/12/2017</td>
+                  <td class="text-center">
+                    <a href="">Test</a>
+                  </td>
+                  <td class="text-center">1</td>
+                  <td class="text-center">12</td>
+                </tr>
+                <tr>
+                  <td>New</td>
+                  <td class="text-center">12/12/2017</td>
+                  <td class="text-center">
+                    <a href="">Test</a>
+                  </td>
+                  <td class="text-center">1</td>
+                  <td class="text-center">12</td>
+                </tr>
+                <tr>
+                  <td>Pending</td>
+                  <td class="text-center">12/12/2017</td>
+                  <td class="text-center">
+                    <a href="">Test</a>
+                  </td>
+                  <td class="text-center">1</td>
+                  <td class="text-center">12</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-12 p-0">
+    <div class="card hub-card mt-0">
+      <div class=" hub-card-block">
+        <div class="hub-card-title p-1">
+          <span class="card-title p-2 m-0 ">
+            <i class="fa fa-file-text"></i>
+            <a [routerLink]="[ '/rfp/client', rfp.name] " class="m-lg-2 ">RFP Internal Notes</a>
+          </span>
+        </div>
+        <div class="hub-card-body p-3 m-0">
+
+          <textarea placeholder="Enter something funny." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 100px; "></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="col-lg-12 p-0">
+    <div class="card hub-card mt-0">
+      <div class=" hub-card-block">
+        <div class="hub-card-title p-1">
+          <span class="card-title p-2 m-0 ">
+            <i class="fa fa-file-text"></i>
+            <a [routerLink]="[ '/rfp/client', rfp.name] " class="m-lg-2 ">RFP Carrier Internal Notes</a>
+          </span>
+        </div>
+        <div class="hub-card-body p-3 m-0">
+
+          <textarea placeholder="Enter something funny." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 100px; "></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12 d-flex justify-content-end p-0">
+    <div class="btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-sm hub-btn-1 bg-success ">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Save
+      </label>
+      <label class="btn btn-sm hub-btn-1 bg-dark">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Close
+      </label>
+      <label class="btn btn-sm hub-btn-1 bg-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Close & Archive
+      </label>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+<div class="container py-3">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <a class="navbar-brand" href="#" style="font-weight: 700;
+          color: papayawhip;">
+        RFP Campaigns
+      </a>
+      <ul class="navbar-nav mr-auto">
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-sm hub-btn-2 my-2 my-sm-0" type="submit">Add New</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="card hub-card mt-2" *ngFor="let rfp of rfps">
+    <div class="row ">
+      <div class="col-md-12">
+        <div class="card-block">
+          <div class="d-flex justify-content-between  hub-card-title">
+            <span class="card-title p-2 m-0">
+              <i class="fa fa-book"></i>
+              <a [routerLink]="['/rfp/client', rfp.name]" class="m-lg-2">{{rfp.name}}</a>
+            </span>
+            <div class="dropdown">
+              <button class="align-items-center btn btn-link btn-sm d-flex dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Actions
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" [routerLink]="['/rfp/details', rfp.rfp_id]">
+                  <i class="fa fa-folder-open pr-2"></i>View </a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <div class="hub-card-body p-2 m-0">
+          <div class="d-flex justify-content-between">
+            <div class="col-xs-6">
+              <label>RFP Number</label>
+              <span class="font-weight-bold">{{rfp.rfp_id}}</span>
+            </div>
+            <div class="col-xs-6">
+              <span class="rfp-status" [class.rfp-status-new]="rfp.status=='New'" [class.rfp-status-completed]="rfp.status=='Completed'">{{rfp.status}}</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div>
+              <label>Submission Date</label> :
+              <span class="font-weight-bold">{{rfp.submission_date}}</span>
+            </div>
+            <div>
+              <label>Due Date</label> :
+              <span class="font-weight-bold">{{rfp.due_date}}</span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label>Completed Date</label> :
+              <span class="font-weight-bold">{{rfp.completed_date}}</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
